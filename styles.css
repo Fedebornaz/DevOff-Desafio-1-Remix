@@ -7,10 +7,10 @@
 header {
   width: 100%;
   margin-bottom: 3rem;
-}
-
-.title {
-  text-align: center;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -29,6 +29,16 @@ main {
 .image {
   border: 3px solid burlywood;
   max-width: calc(33.33% - 2rem);
+  height: auto;
   opacity: 0.75;
   margin: 0 1rem;
+  transition: 0.2s all;
+}
+
+.image:hover {
+  opacity: 1;
+}
+
+.image:active {
+  transform: scale(1.2);
 }
