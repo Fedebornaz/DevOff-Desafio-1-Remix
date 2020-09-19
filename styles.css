@@ -42,3 +42,14 @@ main {
 .image:active {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 500px) {
+  .imagesGallery {
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 80%;
+    margin-bottom: 3rem;
+  }
+} ;
