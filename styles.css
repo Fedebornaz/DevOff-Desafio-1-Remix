@@ -20,19 +20,25 @@ header {
 .imagesGallery {
   max-width: 900px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  height: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(33.33% - 2rem);
+  justify-content: space-between;
   height: 200vh;
 }
 
 .image {
   border: 3px solid burlywood;
-  max-width: calc(33.33% - 2rem);
+  max-width: 100%;
   height: auto;
   opacity: 0.75;
-  margin: 0 1rem;
+  margin-bottom: 1rem;
   transition: 0.2s all;
 }
 
@@ -42,6 +48,7 @@ header {
 
 .image:active {
   transform: scale(1.2);
+  z-index: 2;
 }
 
 @media screen and (max-width: 500px) {
@@ -49,8 +56,9 @@ header {
     flex-direction: column;
   }
 
-  .image {
+  .column {
     max-width: 80%;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
+    height: 100%;
   }
 }
