@@ -21,9 +21,11 @@ main {
 .imagesGallery {
   max-width: 900px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  height: 200vh;
 }
 
 .image {
@@ -52,4 +54,4 @@ main {
     max-width: 80%;
     margin-bottom: 3rem;
   }
-} ;
+}
