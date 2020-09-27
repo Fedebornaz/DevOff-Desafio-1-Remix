@@ -7,15 +7,14 @@
 header {
   width: 100%;
   margin-bottom: 3rem;
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 15vh;
 }
 
-main {
+.container {
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .imagesGallery {
